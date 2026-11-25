@@ -1,0 +1,379 @@
+/* Kibble (Rover) — generated from tokens.json */
+:root, [data-theme="rover"] {
+  --text\.primary: #1f2124; /* `textColor="primary"`. Strongest text, such as titles and body copy. 16.13:1 on `background.primary`; WCAG AA: any text. */
+  --text\.primary_inverse: #ffffff; /* `textColor="primary_inverse"`. Strongest text on a dark `background.contrast` surface. 9.94:1 on `background.contrast`; WCAG AA: any text. */
+  --text\.secondary: #404347; /* `textColor="secondary"`. Text one level below primary, such as details. 9.94:1 on `background.primary`; WCAG AA: any text. */
+  --text\.secondary_inverse: #f4f5f6; /* `textColor="secondary_inverse"`. Secondary text on `background.contrast`. 9.1:1 on `background.contrast`; WCAG AA: any text. */
+  --text\.tertiary: #62686e; /* `textColor="tertiary"`. The lightest text level; reach for it only for a real third level. 5.63:1 on `background.primary`; WCAG AA: any text. */
+  --text\.tertiary_inverse: #e6e8eb; /* `textColor="tertiary_inverse"`. Tertiary text on `background.contrast`. 8.1:1 on `background.contrast`; WCAG AA: any text. */
+  --text\.display: #1f2124; /* `textColor="display"`. Display titles; each brand can give it its own color. 16.13:1 on `background.primary`; WCAG AA: any text. */
+  --text\.price: #1b6c42; /* `textColor="price"`. Prices. 6.42:1 on `background.primary`; WCAG AA: any text. */
+  --text\.error: #bc4338; /* `textColor="error"`. Error messages; the words must say what is wrong. 5.25:1 on `background.primary`; WCAG AA: any text. */
+  --text\.caution: #654418; /* `textColor="caution"`. Caution messages. 8.77:1 on `background.primary`; WCAG AA: any text. */
+  --text\.success: #1b6c42; /* `textColor="success"`. Success messages. 6.42:1 on `background.primary`; WCAG AA: any text. */
+  --text\.navigation: #62686e; /* `textColor="navigation"`. Resting color of items on the top navigation bar. 5.63:1 on `background.navigation`; WCAG AA: any text. */
+  --text\.attention: #bb4f12; /* `textColor="attention"`. Text that needs attention. 4.95:1 on `background.primary`; WCAG AA: any text. */
+  --text\.attention_highlight: #f8b816; /* `textColor="attention_highlight"`. Retired as a text color: never use it for text or icons. 1.77:1 on `background.primary`; WCAG AA: not as text. */
+  --text\.navigation_hover: #1f2124; /* `textColor="navigation_hover"`. Hover color of items on the top navigation bar. 16.13:1 on `background.navigation`; WCAG AA: any text. */
+  --text\.disabled: #9ea5ac; /* `textColor="disabled"`. Text of a disabled control only, never to make text quieter. WCAG sets no minimum for disabled controls. 2.49:1 on `background.primary`; WCAG AA: not required. */
+  --text\.placeholder: #62686e; /* `textColor="placeholder"`. Placeholder text in a field. 5.63:1 on `background.primary`; WCAG AA: any text. */
+  --background\.primary: #ffffff; /* `background="primary"` on Box or Flex. The default page and card surface. */
+  --background\.secondary: #f4f5f6; /* `background="secondary"` on Box or Flex. A quiet surface one step off primary. */
+  --background\.tertiary: #e6e8eb; /* `background="tertiary"` on Box or Flex. A surface one step darker than secondary. */
+  --background\.contrast: #404347; /* `background="contrast"` on Box or Flex. A dark surface; text on it takes an `_inverse` token. */
+  --background\.accent: #fcf6eb; /* `background="accent"` on Box or Flex. An accent surface. */
+  --background\.accent_secondary: #ecf1fb; /* `background="accent_secondary"` on Box or Flex. A second accent surface. */
+  --background\.error: #ffede8; /* `background="error"` on Box or Flex. Error surface, as in an error Banner. */
+  --background\.caution: #fcf6eb; /* `background="caution"` on Box or Flex. Caution surface. */
+  --background\.success: #f1fdf6; /* `background="success"` on Box or Flex. Success surface. */
+  --background\.info: #ecf1fb; /* `background="info"` on Box or Flex. Info surface. */
+  --background\.highlight: #e8f9fc; /* `background="highlight"` on Box or Flex. Highlight surface. */
+  --background\.attention_blue: #c5d5f2; /* `background="attention_blue"` on Box or Flex. Attention surface in blue. */
+  --background\.attention_highlight: #f8b816; /* `background="attention_highlight"` on Box or Flex. Attention highlight fill. Not retired as a background. */
+  --background\.notification: #bc4338; /* `background="notification"` on Box or Flex. Fill of a count badge or notification dot, as on ButtonWithCountBadge. */
+  --background\.navigation: #ffffff; /* `background="navigation"` on Box or Flex. The top navigation bar. */
+  --background\.overlay: rgba(31, 33, 36, 0.48); /* `background="overlay"` on Box or Flex. The see-through scrim behind a Modal or BottomSheet. */
+  --background\.overlay_accent: rgba(22, 154, 91, 0.24); /* `background="overlay_accent"` on Box or Flex. A green-tinted scrim. */
+  --interactive\.primary_base: #ffffff; /* `background="interactive.primary_base"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.primary_pressed: #f4f5f6; /* `background="interactive.primary_pressed"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.primary_active: #404347; /* `background="interactive.primary_active"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.primary_active_pressed: #1f2124; /* `background="interactive.primary_active_pressed"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.disabled: #f4f5f6; /* `background="interactive.disabled"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.destructive: #bc4338; /* `background="interactive.destructive"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.destructive_pressed: #a03f37; /* `background="interactive.destructive_pressed"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.button_primary_base: #2e67d1; /* `background="interactive.button_primary_base"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.button_primary_pressed: #2d5cb1; /* `background="interactive.button_primary_pressed"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.button_primary_inverse_base: #ecf1fb; /* `background="interactive.button_primary_inverse_base"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.button_primary_inverse_pressed: #c5d5f2; /* `background="interactive.button_primary_inverse_pressed"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.toggle_button_selected_base: #ecf1fb; /* `background="interactive.toggle_button_selected_base"`. Interactive fill for this state; take the state token, never a darker step. */
+  --interactive\.toggle_button_selected_hover: #c5d5f2; /* `background="interactive.toggle_button_selected_hover"`. Interactive fill for this state; take the state token, never a darker step. */
+  --border\.primary: #c9cfd4; /* `borderColor="border.primary"`. Default outline of cards and controls. */
+  --border\.secondary: #d7dce0; /* `borderColor="border.secondary"`. A lighter outline. */
+  --border\.contrast: #62686e; /* `borderColor="border.contrast"`. A strong outline. */
+  --border\.surface: #ffffff; /* `borderColor="border.surface"`. A ring that keeps a badge or dot readable against what is behind it. */
+  --border\.error: #bc4338; /* `borderColor="border.error"`. Outline of a field in error. */
+  --border\.caution: #f8b816; /* `borderColor="border.caution"`. Caution outline. */
+  --border\.success: #1a824e; /* `borderColor="border.success"`. Success outline. */
+  --border\.info: #c9cfd4; /* `borderColor="border.info"`. Info outline. */
+  --border\.highlight: #116876; /* `borderColor="border.highlight"`. Highlight outline. */
+  --border\.input_focus: #2e67d1; /* `borderColor="border.input_focus"`. Outline of a focused input. */
+  --separator\.primary: #d7dce0; /* `borderColor="separator.primary"`. Dividers and separators. */
+  --interactive_text\.primary_base: #404347; /* `theme.colors.interactive_text.primary_base` via `useTheme()`; no typed prop. Interactive text for this state. */
+  --interactive_text\.primary_active: #2e67d1; /* `theme.colors.interactive_text.primary_active` via `useTheme()`; no typed prop. Interactive text for this state. */
+  --interactive_text\.primary_pressed: #2d5cb1; /* `theme.colors.interactive_text.primary_pressed` via `useTheme()`; no typed prop. Interactive text for this state. */
+  --interactive_text\.destructive_base: #bc4338; /* `theme.colors.interactive_text.destructive_base` via `useTheme()`; no typed prop. Interactive text for this state. */
+  --interactive_text\.destructive_pressed: #a03f37; /* `theme.colors.interactive_text.destructive_pressed` via `useTheme()`; no typed prop. Interactive text for this state. */
+  --interactive_text\.destructive_inverse_base: #ff7665; /* `theme.colors.interactive_text.destructive_inverse_base` via `useTheme()`; no typed prop. Interactive text for this state. */
+  --interactive_text\.destructive_inverse_pressed: #ffa494; /* `theme.colors.interactive_text.destructive_inverse_pressed` via `useTheme()`; no typed prop. Interactive text for this state. */
+  --interactive_text\.disabled: #9ea5ac; /* `theme.colors.interactive_text.disabled` via `useTheme()`; no typed prop. Interactive text for this state. */
+  --interactive_border\.primary_base: #c9cfd4; /* `borderColor="interactive_border.primary_base"`. Interactive border for this state. */
+  --interactive_border\.primary_pressed: #767c82; /* `borderColor="interactive_border.primary_pressed"`. Interactive border for this state. */
+  --interactive_border\.primary_active: #404347; /* `borderColor="interactive_border.primary_active"`. Interactive border for this state. */
+  --interactive_border\.primary_active_pressed: #1f2124; /* `borderColor="interactive_border.primary_active_pressed"`. Interactive border for this state. */
+  --interactive_border\.selected: #2e67d1; /* `borderColor="interactive_border.selected"`. Interactive border for this state. */
+  --interactive_border\.disabled: #e6e8eb; /* `borderColor="interactive_border.disabled"`. Interactive border for this state. */
+  --interactive_border\.button_primary_base: #767c82; /* `borderColor="interactive_border.button_primary_base"`. Interactive border for this state. */
+  --interactive_link\.primary_base: #2e67d1; /* Picked by Link's `variant`; never pass the color. Link variant: primary. 5.28:1 on `background.primary`; WCAG AA: any text. */
+  --interactive_link\.primary_pressed: #24498c; /* Picked by Link's `variant`; never pass the color. Link variant: primary, on hover. 8.72:1 on `background.primary`; WCAG AA: any text. */
+  --interactive_link\.primary_visited: #2e67d1; /* Picked by Link's `variant`; never pass the color. No Link variant uses it yet. 5.28:1 on `background.primary`; WCAG AA: any text. */
+  --interactive_link\.primary_inverse_base: #a3bdeb; /* Picked by Link's `variant`; never pass the color. Link variant: primaryContrast. 5.22:1 on `background.contrast`; WCAG AA: any text. */
+  --interactive_link\.primary_inverse_pressed: #ecf1fb; /* Picked by Link's `variant`; never pass the color. Link variant: primaryContrast, on hover. 8.77:1 on `background.contrast`; WCAG AA: any text. */
+  --interactive_link\.primary_inverse_visited: #a3bdeb; /* Picked by Link's `variant`; never pass the color. No Link variant uses it yet. 5.22:1 on `background.contrast`; WCAG AA: any text. */
+  --interactive_link\.secondary_base: #62686e; /* Picked by Link's `variant`; never pass the color. Link variant: secondary. 5.63:1 on `background.primary`; WCAG AA: any text. */
+  --interactive_link\.secondary_pressed: #1f2124; /* Picked by Link's `variant`; never pass the color. Link variant: secondary, on hover. 16.13:1 on `background.primary`; WCAG AA: any text. */
+  --interactive_link\.secondary_visited: #62686e; /* Picked by Link's `variant`; never pass the color. No Link variant uses it yet. 5.63:1 on `background.primary`; WCAG AA: any text. */
+  --interactive_link\.secondary_inverse_base: #f4f5f6; /* Picked by Link's `variant`; never pass the color. Link variant: secondaryContrast. 9.1:1 on `background.contrast`; WCAG AA: any text. */
+  --interactive_link\.secondary_inverse_pressed: #d7dce0; /* Picked by Link's `variant`; never pass the color. Link variant: secondaryContrast, on hover. 7.19:1 on `background.contrast`; WCAG AA: any text. */
+  --interactive_link\.secondary_inverse_visited: #f4f5f6; /* Picked by Link's `variant`; never pass the color. No Link variant uses it yet. 9.1:1 on `background.contrast`; WCAG AA: any text. */
+  --brand\.rover: #00bd70; /* `theme.colors.brand.rover`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.catinaflat: #f4715f; /* `theme.colors.brand.catinaflat`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.folder: #d9d9d9; /* `theme.colors.brand.folder`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.safety: #2741cc; /* `theme.colors.brand.safety`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.logo: #f31e1e; /* `theme.colors.brand.logo`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.facebook: #3b5998; /* `theme.colors.brand.facebook`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.google: #4285f4; /* `theme.colors.brand.google`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.instagram: #8a3ab9; /* `theme.colors.brand.instagram`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.linkedin: #0a66c2; /* `theme.colors.brand.linkedin`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.tiktok: #000000; /* `theme.colors.brand.tiktok`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.youtube: #ff0000; /* `theme.colors.brand.youtube`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.apple: #000000; /* `theme.colors.brand.apple`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.active_brand: #00bd70; /* `theme.colors.brand.active_brand`. Logos and third-party marks only, usually an SVG fill. */
+  --brand\.whatsapp: #25d366; /* `theme.colors.brand.whatsapp`. Logos and third-party marks only, usually an SVG fill. */
+  --neutral\.100: #f4f5f6; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --neutral\.200: #e6e8eb; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --neutral\.300: #d7dce0; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --neutral\.400: #c9cfd4; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --neutral\.500: #9ea5ac; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --neutral\.600: #767c82; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --neutral\.700: #62686e; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --neutral\.800: #404347; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --neutral\.900: #1f2124; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --neutral\.white: #ffffff; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --neutral\.black: #000000; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --green\.100: #f1fdf6; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --green\.200: #bae8c9; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --green\.300: #6bd094; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --green\.400: #05b86c; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --green\.500: #169a5b; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --green\.600: #1a824e; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --green\.700: #1b6c42; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --green\.800: #1b5535; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --green\.900: #173724; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --cyan\.100: #e8f9fc; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --cyan\.200: #8be2ef; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --cyan\.300: #39cde4; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --cyan\.400: #1cb0c7; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --cyan\.500: #1893a7; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --cyan\.600: #127787; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --cyan\.700: #116876; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --cyan\.800: #0d535d; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --cyan\.900: #09363d; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --yellow\.100: #fcf6eb; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --yellow\.200: #ffecbd; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --yellow\.300: #ffd76a; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --yellow\.400: #f8b816; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --yellow\.500: #d59418; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --yellow\.600: #b77f1d; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --yellow\.700: #80561a; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --yellow\.800: #654418; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --yellow\.900: #412c13; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --blue\.100: #ecf1fb; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --blue\.200: #c5d5f2; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --blue\.300: #a3bdeb; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --blue\.400: #7da1e2; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --blue\.500: #5685da; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --blue\.600: #2e67d1; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --blue\.700: #2d5cb1; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --blue\.800: #24498c; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --blue\.900: #172f5b; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --red\.100: #ffede8; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --red\.200: #ffc8bc; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --red\.300: #ffa494; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --red\.400: #ff7665; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --red\.500: #e6564a; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --red\.600: #bc4338; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --red\.700: #a03f37; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --red\.800: #7d342d; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --red\.900: #4f231f; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --orange\.100: #fcf5ef; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --orange\.200: #ffd4a8; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --orange\.300: #ffa96e; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --orange\.400: #ff8a46; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --orange\.500: #ff7525; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --orange\.600: #e0621b; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --orange\.700: #bb4f12; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --orange\.800: #77320b; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --orange\.900: #331706; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --pink\.100: #fff2f7; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --pink\.200: #ffd6e8; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --pink\.300: #ffa6cc; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --pink\.400: #ff7db1; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --pink\.500: #ff66a3; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --pink\.600: #d13880; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --pink\.700: #99215f; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --pink\.800: #661342; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --pink\.900: #330a22; /* Palette step: names a hue, not a job. Not for product code unless a ticketed exception allows it; use a role token. */
+  --overlay\.background: rgba(31, 33, 36, 0.48); /* Palette scrim behind `background.overlay`. Use `background="overlay"`. */
+  --overlay\.accent: rgba(22, 154, 91, 0.24); /* Palette green scrim behind `background.overlay_accent`. Use `background="overlay_accent"`. */
+  --shadow\.elevation_low: 0px 1px 4px 0px rgba(27, 31, 35, 0.24); /* `boxShadow="elevation_low"`. Low elevation (`variant="elevation_low"`). */
+  --shadow\.elevation_mid: 0px 2px 12px -1px rgba(27, 31, 35, 0.24); /* `boxShadow="elevation_mid"`. Mid elevation, as on the `card_default` variant. */
+  --shadow\.elevation_high: 0px 8px 10px -6px rgba(27, 31, 35, 0.22); /* `boxShadow="elevation_high"`. High elevation (`variant="elevation_high"`). */
+  --shadow\.border_primary: 0px 0px 0px 2px rgba(207, 215, 222, 1); /* `boxShadow="border_primary"`. A 2px ring drawn as a shadow, primary. */
+  --shadow\.border_contrast: 0px 0px 0px 2px rgba(102, 114, 127, 1); /* `boxShadow="border_contrast"`. A 2px ring drawn as a shadow, contrast. */
+  --shadow\.border_disabled: 0px 0px 0px 2px rgba(232, 235, 237, 1); /* `boxShadow="border_disabled"`. A 2px ring drawn as a shadow, disabled. */
+}
+:root {
+  --\30 x: 0px; /* `padding="0x"`, `gap="0x"`. 0 × 1x. */
+  --\31 x: 4px; /* `padding="1x"`, `gap="1x"`. 1 × 1x. Inside one item, such as the lines of a stay. Negative twin `-1x` works in margins and offsets. */
+  --\32 x: 8px; /* `padding="2x"`, `gap="2x"`. 2 × 1x. Minimum gap between neighboring tap targets. Negative twin `-2x` works in margins and offsets. */
+  --\33 x: 12px; /* `padding="3x"`, `gap="3x"`. 3 × 1x. Negative twin `-3x` works in margins and offsets. */
+  --\34 x: 16px; /* `padding="4x"`, `gap="4x"`. 4 × 1x. Between items in a section. Negative twin `-4x` works in margins and offsets. */
+  --\35 x: 20px; /* `padding="5x"`, `gap="5x"`. 5 × 1x. Negative twin `-5x` works in margins and offsets. */
+  --\36 x: 24px; /* `padding="6x"`, `gap="6x"`. 6 × 1x. Between form fields on every platform. Negative twin `-6x` works in margins and offsets. */
+  --\38 x: 32px; /* `padding="8x"`, `gap="8x"`. 8 × 1x. Between sections of a page. Negative twin `-8x` works in margins and offsets. */
+  --\31 0x: 40px; /* `padding="10x"`, `gap="10x"`. 10 × 1x. Negative twin `-10x` works in margins and offsets. */
+  --\31 2x: 48px; /* `padding="12x"`, `gap="12x"`. 12 × 1x. Between groups of form fields. Negative twin `-12x` works in margins and offsets. */
+  --\31 6x: 64px; /* `padding="16x"`, `gap="16x"`. 16 × 1x. Negative twin `-16x` works in margins and offsets. */
+  --\32 0x: 80px; /* `padding="20x"`, `gap="20x"`. 20 × 1x. Negative twin `-20x` works in margins and offsets. */
+  --\32 4x: 96px; /* `padding="24x"`, `gap="24x"`. 24 × 1x. Negative twin `-24x` works in margins and offsets. */
+  --\33 2x: 128px; /* `padding="32x"`, `gap="32x"`. 32 × 1x. Negative twin `-32x` works in margins and offsets. */
+  --\34 0x: 160px; /* `padding="40x"`, `gap="40x"`. 40 × 1x. Negative twin `-40x` works in margins and offsets. */
+  --\34 8x: 192px; /* `padding="48x"`, `gap="48x"`. 48 × 1x. Negative twin `-48x` works in margins and offsets. */
+  --\36 4x: 256px; /* `padding="64x"`, `gap="64x"`. 64 × 1x. Negative twin `-64x` works in margins and offsets. */
+  --radius\.square: 0px; /* `borderRadius="square"`. Square corners. */
+  --radius\.primary: 8px; /* `borderRadius="primary"`. Default corner, as on the `card_default` variant. */
+  --radius\.secondary: 4px; /* `borderRadius="secondary"`. A small corner. */
+  --radius\.large: 16px; /* `borderRadius="large"`. A large corner. */
+  --border-width\.primary: 2px; /* `borderWidth="primary"`. Button borders. */
+  --border-width\.secondary: 1px; /* `borderWidth="secondary"`. Hairline borders, as in Box examples with `borderColor`. */
+  --breakpoint\.2: 768px; /* Responsive array value 2 applies from 768px on web; React Native uses only the first value. */
+  --breakpoint\.3: 992px; /* Responsive array value 3 applies from 992px on web; React Native uses only the first value. */
+  --breakpoint\.4: 1200px; /* Responsive array value 4 applies from 1200px on web; React Native uses only the first value. */
+  --font-sans: 'Averta', 'Avenir', 'Helvetica Neue', 'Calibri', 'Helvetica', 'Roboto', sans-serif;
+  --font-display: 'Bogart-Semibold', 'Averta', serif;
+  --text-text-300: 400 20px/1.2 var(--font-sans); /* `<Text size="300">`. Inline and UI text; no space below. */
+  --text-text-200: 400 16px/1.5 var(--font-sans); /* `<Text size="200">`. Inline and UI text; no space below. */
+  --text-text-100: 400 14px/1.25 var(--font-sans); /* `<Text size="100">`. Inline and UI text; no space below. */
+  --text-text-50: 400 13px/1.25 var(--font-sans); /* `<Text size="50">`. Inline and UI text; no space below. Discouraged (☠️): not for new work. */
+  --text-paragraph-300: 400 20px/1.5 var(--font-sans); /* `<Paragraph size="300">`. Running prose. Space below 24px. */
+  --text-paragraph-200: 400 16px/1.5 var(--font-sans); /* `<Paragraph size="200">`. Running prose. Space below 16px. */
+  --text-paragraph-100: 400 14px/1.5 var(--font-sans); /* `<Paragraph size="100">`. Running prose. Space below 12px. */
+  --text-paragraph-50: 400 13px/1.5 var(--font-sans); /* `<Paragraph size="50">`. Running prose. Space below 12px. Discouraged (☠️): not for new work. */
+  --text-heading-600: 600 38px/1.25 var(--font-sans); /* `<Heading size="600">`. Page and section titles, semibold. Space below 32px. Grows to 48px from 768px on web. */
+  --text-heading-500: 600 32px/1.25 var(--font-sans); /* `<Heading size="500">`. Page and section titles, semibold. Space below 24px. Grows to 40px from 768px on web. */
+  --text-heading-400: 600 26px/1.25 var(--font-sans); /* `<Heading size="400">`. Page and section titles, semibold. Space below 20px. Grows to 32px from 768px on web. */
+  --text-heading-300: 600 20px/1.25 var(--font-sans); /* `<Heading size="300">`. Page and section titles, semibold. Space below 16px. */
+  --text-heading-200: 600 16px/1.25 var(--font-sans); /* `<Heading size="200">`. Page and section titles, semibold. Space below 12px. */
+  --text-heading-100: 600 14px/1.25 var(--font-sans); /* `<Heading size="100">`. Page and section titles, semibold. Space below 8px. */
+  --text-heading-50: 600 13px/1.25 var(--font-sans); /* `<Heading size="50">`. Page and section titles, semibold. Space below 8px. Discouraged (☠️): not for new work. */
+  --text-display-600: 600 38px/1.25 var(--font-display); /* `<Display size="600">`. Page titles on pre-login and promotional pages. Space below 32px. Grows to 48px from 768px on web. */
+  --text-display-500: 600 32px/1.25 var(--font-display); /* `<Display size="500">`. Page titles on pre-login and promotional pages. Space below 24px. Grows to 40px from 768px on web. */
+  --text-display-400: 600 26px/1.25 var(--font-display); /* `<Display size="400">`. Page titles on pre-login and promotional pages. Space below 20px. Grows to 32px from 768px on web. */
+}
+.text-300 {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-200 {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-100 {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-50 {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.paragraph-300 {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.paragraph-200 {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.paragraph-100 {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.paragraph-50 {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.heading-600 {
+  font-family: var(--font-sans);
+  font-size: 38px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.heading-500 {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.heading-400 {
+  font-family: var(--font-sans);
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.heading-300 {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.heading-200 {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.heading-100 {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.heading-50 {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.display-600 {
+  font-family: var(--font-display);
+  font-size: 38px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.display-500 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.display-400 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+@font-face {
+  font-family: "Averta";
+  src: url("fonts/Averta-Regular-Basic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Averta";
+  src: url("fonts/Averta-Semibold-Basic.woff2") format("woff2");
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bogart-Semibold";
+  src: url("fonts/Bogart-Semibold-Basic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
